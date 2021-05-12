@@ -1,0 +1,19 @@
+<form class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="name">Product</label>
+        <input type="text" name="name" id="name" [(ngModel)]="name" placeholder="Add Product">
+    </div>
+    <div class="form-control">
+        <label for="cost">Cost</label>
+        <input type="number" name="cost" id="cost" [(ngModel)]="cost" placeholder="Add Cost">
+    </div>
+    <div class="form-control">
+        <label for="size">Size</label>
+        <input type="text" name="size" id="size" [(ngModel)]="size" placeholder="Add Size (S, M, L)">
+    </div>
+    <div class="form-control form-control-check">
+        <label for="available">Available?</label>
+        <input type="checkbox" name="available"  id="available" [(ngModel)]="available">
+    </div>
+    <input type="submit" value="Save Product" class="btn btn-block">
+</form>
